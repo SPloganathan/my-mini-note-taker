@@ -10,6 +10,7 @@ const PORT = 3001;
 
 // middleware
 app.use(express.static("public"));
+app.use("/api", require("./routers/index"));
 
 // routes for static HTML files created
 app.get("/notes", (req, res) => {
