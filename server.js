@@ -6,7 +6,7 @@ const path = require("path");
 const app = express();
 
 // PORT for running the server
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // middleware
 app.use(express.static("public"));
