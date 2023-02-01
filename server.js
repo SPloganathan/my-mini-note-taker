@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 // middleware
 app.use(express.static("public"));
 app.use(express.json());
-app.use("/api", require("./routers/index"));
+app.use("/api", require("./routes/index"));
 
 // routes for static HTML files created
 app.get("/notes", (req, res) => {
